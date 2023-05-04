@@ -1,12 +1,10 @@
 package com.steven.tablayout;
-
 import android.content.Context;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
-
 public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
     private BeritaFragment _beritaFragment = new BeritaFragment();
     private Context _context;
@@ -19,7 +17,6 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
         _context = context;
         _tabCount = tabCount;
     }
-
     @NonNull
     @Override
     public Fragment getItem(int position) {
@@ -32,7 +29,6 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
                 return _kampusFragment;
         }
     }
-
     @Override
     public int getCount() {
         return _tabCount;
